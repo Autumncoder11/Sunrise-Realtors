@@ -42,6 +42,38 @@
             font-size: 0.9rem;
         }
 
+        .location-section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .location-section h2 {
+            color: #16A34A;
+            margin-bottom: 12px;
+        }
+
+        .map-embed {
+            position: relative;
+            width: 100%;
+            padding-bottom: 66%;
+            /* aspect ratio; adjust for taller/shorter map */
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+            border: 2px solid #333;
+        }
+
+        .map-embed iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
         .legend {
             text-align: center;
             margin: 10px;
@@ -11533,6 +11565,17 @@
             <tspan dx="0" dy="0" id="tspan6074-2">10.0M WIDE LAYOUT ROAD</tspan>
         </text>
     </svg>
+
+    <section class="location-section">
+        <h2>Location</h2>
+        <div class="map-embed">
+            <iframe
+                src="https://www.google.com/maps/d/embed?mid=10mZ0Inv2YkBNPt1vcebrAvszJ31D0wk&amp;ehbc=2E312F"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
 
     <footer>
         © 2026 Sunrise Realtor. All rights reserved.
